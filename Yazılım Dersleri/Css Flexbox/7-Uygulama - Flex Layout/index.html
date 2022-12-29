@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Layout</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header{
+            background-color: goldenrod;
+            text-align: center;
+            padding: 30px;
+            color: #fff;
+
+        }
+        
+        .navbar{
+            display: flex;
+            background-color: black;
+        }
+
+        .navbar a{
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            padding: 16px;
+            transition: all 0.5s;
+        }
+
+        .navbar a:hover{
+            background-color: goldenrod;
+            color: black;
+        }
+
+        #main{
+            display: flex;
+        }
+
+        #sidebar{
+            background-color: #f1f1f1ff;
+            flex-basis: 25%;
+            padding: 20px;
+            order: 1;
+        }
+
+        #content{
+            flex-basis: 75%;
+            padding: 20px;
+        }
+
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            height: 100px;
+        }
+
+        .ph{
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+            margin-top: 10px;
+
+        }
+
+        .box{
+            margin-bottom: 20px;
+
+        }
+
+        p{
+            margin: 10px 0;
+        }
+
+        .footerbox{
+            background-color: #ddd;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @media  screen and (max-width:700px){
+            #main, .navbar{
+                flex-direction: column;
+            }
+
+            #sidebar{
+                order: -1;
+            }
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+
+        <h1>
+            Lorem İpsum
+        </h1>
+        <h3>
+            Lorem ipsum dolor sit amet.
+        </h3>
+
+    </div>
+
+    </header>
+
+
+    <navbar>
+
+    <div class="navbar">
+
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+
+    </div>
+
+    </navbar>
+
+    <div id="main">
+
+        <div id="sidebar">
+            <div class="box">
+                <h2>Lorem İpsum</h2>
+                <div class="ph" style="height: 200px;">lorem</div>
+                <p>Lorem ipsum doler, sit amet consectetur adipisicing elit. Est necessitatibus officiis, accusantium itaque magnam illo?</p>
+                <div class="ph" style="height: 50px;">lorem</div>
+                <div class="ph" style="height: 50px;">lorem</div>
+                <div class="ph" style="height: 50px;">lorem</div>
+            </div>
+        </div>
+
+        <div id="content">
+            <div class="box">
+            <h2>Lorem İpsum</h2>
+            <div class="ph" style="height: 200px;">lorem</div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est necessitatibus officiis, accusantium itaque magnam illo?</p>
+
+            <div class="box">
+                <h2>Lorem İpsum</h2>
+                <div class="ph" style="height: 200px;">lorem</div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est necessitatibus officiis, accusantium itaque magnam illo?</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerbox">
+        <h1>Lorem İpsum</h1>
+        </div>
+   </footer>
+   
+</body>
+
+
+</html>

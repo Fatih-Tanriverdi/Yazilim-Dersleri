@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            /*align-content: flex-stretch; var sayılan komut*/
+            /*align-content: flex-start;*/
+            /*align-content: flex-end;*/
+            /*align-content: center;*/
+            /*align-content: space-between;*/
+            /*align-content: space-around; üstten ve alttan ekstra 1 birim boşluk bırakır.*/
+            /*align-content: space-evenly; kenarlardan ve ortadan eşit boşluk bırakır.*/
+
+
+            height: 1000px;
+            background-color: #f2f2f2;
+            padding: 15px;
+            
+        }
+
+        .item {
+            background-color: chocolate;
+            color: white;
+            margin: 30px;
+            padding: 40px;
+            font-size: 40px;
+            
+            
+        }
+
+        .i8{
+            flex: 1;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    <div class="item ">item 1</div>
+    <div class="item ">item 2</div>
+    <div class="item ">item 3</div>
+    <div class="item ">item 4</div>
+    <div class="item ">item 5</div>
+    <div class="item ">item 6</div>
+    <div class="item ">item 7</div>
+    <div class="item i8">item 8</div>
+    </div>
+</body>
+</html>

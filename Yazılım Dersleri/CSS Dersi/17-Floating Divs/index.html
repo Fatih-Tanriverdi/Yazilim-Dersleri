@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=div*3, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            background-color: gray;
+        }
+
+        .box{
+            width: 170px;
+            height: 170px;
+            margin: 2px;
+        }
+
+        #first{
+            background-color: aqua;
+            float: right;
+        }
+
+        #second{
+            background-color: brown;
+            float: right;
+        }
+
+        #third{
+            background-color: blueviolet;
+            float: right;
+        }
+
+        .clearfix::after{
+            content:"";
+            display: block;
+            clear: both;
+        }
+
+        p:after{
+            content: "-deneme";
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+
+<div id="container" class="clearfix">
+
+    <div id="first" class="box"></div>
+    <div id="second" class="box"></div>
+    <div id="third" class="box"></div>
+
+</div>
+
+<p>Lorem ipsum dolor sit amet.</p>
+    
+
+</body>
+</html>

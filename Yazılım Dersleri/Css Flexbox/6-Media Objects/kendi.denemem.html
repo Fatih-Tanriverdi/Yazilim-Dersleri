@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .media{
+            display: flex;
+            background-color: antiquewhite;
+            align-items: flex-start;
+            margin: 16px;
+            padding: 16px;
+            max-width: 600px;
+            border-radius: 3px;
+        }
+
+        .media-object{
+            height: 100px;
+            margin-right: 16px;
+        }
+
+        .media-heading{
+            margin: 0 0 8px;
+        }
+
+        .media-right{
+            order: 1;
+        }
+        
+        .media-inside{
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="media">
+        <img class="media-object" src="./images/images.png" alt="">
+        <div class="media-body">
+            <h3 class="media-heading">Lorem İpsum</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, perspiciatis officia! Similique sed laudantium reprehenderit ratione, maiores accusamus id dolore.</p>
+        </div>
+    </div>
+
+    <div class="media">
+        <img class="media-object media-right" src="./images/images.png" alt="">
+        <div class="media-body">
+            <h3 class="media-heading">Lorem İpsum</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, perspiciatis officia! Similique sed laudantium reprehenderit ratione, maiores accusamus id dolore.</p>
+        </div>
+    </div>
+
+    <div class="media">
+        <img class="media-object" src="./images/images.png" alt="">
+        <div class="media-body">
+            <h3 class="media-heading">Lorem İpsum</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, perspiciatis officia! Similique sed laudantium reprehenderit ratione, maiores accusamus id dolore.</p>
+            <div class="media media-inside">
+        <img class="media-object" src="./images/images.png" alt="">
+        <div class="media-body">
+            <h3 class="media-heading">Lorem İpsum</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, perspiciatis officia! Similique sed laudantium reprehenderit ratione, maiores accusamus id dolore.</p>
+        </div>
+    </div>
+        </div>
+    </div>
+
+</body>
+</html>

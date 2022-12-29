@@ -1,0 +1,38 @@
+/* Notlar 
+*{
+    border: 1px solid blue;
+}
+
+p{
+    border: 1px solid blue;
+}
+
+div p{
+    border: 1px solid blue;
+}
+
+.container div{
+    border: 1px solid red;
+}
+
+div.box,p{
+    border: 1px solid blue;
+}
+
+div>p{
+    border: 1px solid yellow;
+}
+
+p~div{
+    border: 1px solid red;
+}
+
+*/
+
+p+div{
+    border: 1px solid red;
+}
+
+
+
+
